@@ -1,0 +1,57 @@
+/*
+	Name: Joyce Wing Yan Lau;
+	Student Number: 42377029;
+	Tutorial: P01 Monday 8am;
+	Course: INFS7202;
+*/
+/* To change the colour of the navigation buttons on hover*/
+ul.nav a:hover { 
+	color: blue !important; 
+}
+
+
+/* Styling for the navigation bar*/
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Styling for all section headings*/
+.section-headings{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/* Styling for the background of the website*/
+body {
+	background-image: url("../images/backgroundfinal.svg");
+	background-repeat: repeat;
+	background-color: #444444;
+	margin: 0;	
+	padding:0
+}
+
+/* Styling for the foreground of the website*/
+#main {
+	background-color: #FAFAFA;
+	width: 70%;
+	margin: auto
+}
+
+/* Styling for the footer */
+#footer {
+	background-color: #FAFAFA;
+	width: 70%;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* For hidden divs */
+.show_hide {
+display:none;
+}

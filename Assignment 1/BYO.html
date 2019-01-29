@@ -1,0 +1,188 @@
+<!--
+Change since demo:
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rejoice Custom Computer Builders</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+		<!--
+			Name: Joyce Wing Yan Lau
+			Student Number: 42377029
+			Course: INFS7202
+			Tutorial: P01 Monday 8am
+		-->
+		<!--
+			Change since demo on Monday 18/4
+				- Fixed any HTML validation errors
+				- Added an extra hidden div for Price (the actual price will not be visible for this prototype as it will be retrieved using PHP - more details are in the proposal)
+				- Changed the semantic tags
+			Note: For some reason the validation says I have stray input tags but I cannot find the problem with it.
+		-->
+	</head>
+	<body>
+		<nav id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header"><a class="navbar-brand" href="#">Rejoice Computers</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-menubuilder">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="index.html">Home</a>
+						</li>
+						<li><a href="Products.html">Products</a>
+						</li>                
+						<li class="active"><a href="BYO.html">Build Your Own</a>
+						</li>
+						<li><a href="AboutUs.html">About Us</a>
+						</li>
+						<li><a class="navlink" href="ContactUs.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section id="main" class="container">
+			<h2 class="section-headings">
+				BUILD YOUR OWN COMPUTER
+			</h2>
+			<p>
+				Here, you can pick your own computer parts and we'll assemble it for you! 
+				All the products here are subject to availability. If we do not stock the parts that you want, feel free to enter the components you want in the "Item Not Listed/Additional Comments" section and we will do our best to source those parts. You can even pick an entirely different build and put that in the "Item Not Listed/Additional Comments" section if you wish. We will supply you with a custom quote. 
+
+			</p>
+			<form action="checkout.html">
+				<div class="form-group">
+					<p>
+						CPU
+						<select name="CPU" class = "form-control">
+							<option value="i3">Core i3 $100</option>
+							<option value="i5">Core i5 $200</option>
+							<option value="i7">Core i7 $300</option>
+							<option value="i7K">Core i7 Unlocked $350</option>
+						</select>
+					</p>
+					<p>
+						Motherboard
+						<select name="Motherboard" class = "form-control">
+							<option value="AsusB170">Asus B170 Motherboard</option>
+							<option value="MSIH170">MSI H170 Motherboard</option>
+							<option value="ASUSMax">Asus Maximum Hero Z170 Motherboard</option>
+							<option value="GigabyteZ170">Gigabyte G1 Gaming Z170 Motherboard</option>
+						</select>
+					</p>
+					<p>
+						Memory
+						<select name="Memory" class = "form-control">
+							<option value="4g">4GB DDR4 RAM</option>
+							<option value="8g">8GB DDR4 RAM</option>
+							<option value="16g">16GB DDR4 RAM</option>
+							<option value="32g">32GB DDR4 RAM</option>
+						</select>
+					</p>
+					<p>
+						Graphics Card
+						<select name="GPU" class = "form-control">
+							<option value="ZOTAC290">ZOTAC Reference R9 290x</option>
+							<option value="MSI960">MSI TWIN FROZR GTX960</option>
+							<option value="ASUS970">Asus DIRECT CUII GTX970</option>
+							<option value="Gigabyte980Ti">GIGABYTE WINDFORCE GTX980Ti</option>
+						</select>
+					</p>
+					<p>
+						Case/Tower
+						<select name="Case" class = "form-control">
+							<option value="FractalDS">Fractal Design Define S</option>
+							<option value="NZXT410">NZXT Phantom 410 Gunmetal</option>
+							<option value="PhanteksE">Phanteks Enthoo Evolv ATX Gunmetal</option>
+							<option value="PhanteksPL">Phantek Primo Luxe ATX</option>
+						</select>
+					</p>
+					<p>
+						Power Supply
+						<select name="PSU" class = "form-control">
+							<option value="S420W">Seasonic 420W Power Supply</option>
+							<option value="CM650">Corsair CM650 650W Power Supply</option>
+							<option value="Antec750W">Antec True Power 750W Power Supply</option>
+							<option value="Antec850W">Antec HCG 850W Power Supply</option>
+						</select>
+					</p>
+					<p>
+						HDD/SSD
+						<select name="HDD" class = "form-control">
+							<option value="Samsung120">Samsung 120gb 850 Evo SSD</option>
+							<option value="Samsung512">Samsung 512gb 850 Pro nVME SSD</option>
+							<option value="WD1TB">Western Digital Black 2TB 7200rpm Hard Drive Motherboard</option>
+							<option value="WD3TB">Western Digital Black 2TB 7200rpm Hard Drive Motherboard</option>
+						</select>
+
+						<input type="button" onClick="javascript:showonlyone('HDD2');" value="Add another HDD/SSD" class="btn btn-default"/>  
+					</p>
+					<div class="show_hide" id="HDD2" class="HDD-divs">
+						<p>
+							HDD/SSD 2
+							<select name="HDD" class = "form-control">
+								<option value="Samsung120">Samsung 120gb 850 Evo SSD</option>
+								<option value="Samsung512">Samsung 512gb 850 Pro nVME SSD</option>
+								<option value="WD1TB">Western Digital Black 2TB 7200rpm Hard Drive Motherboard</option>
+								<option value="WD3TB">Western Digital Black 2TB 7200rpm Hard Drive Motherboard</option>
+							</select>
+						</p>
+						<p>
+							<input type="button" onClick="javascript:showonlyone('HDD3');" value="Add another HDD/SSD" class="btn btn-default"/>
+						</p>
+					</div>
+					<div class="show_hide" id="HDD3">
+						<p>
+							HDD/SSD 3
+							<select name="HDD" class = "form-control">
+								<option value="Samsung120">Samsung 120gb 850 Evo SSD</option>
+								<option value="Samsung512">Samsung 512gb 850 Pro nVME SSD</option>
+								<option value="WD1TB">Western Digital Black 2TB 7200rpm Hard Drive Motherboard</option>
+								<option value="WD3TB">Western Digital Black 2TB 7200rpm Hard Drive Motherboard</option>
+							</select>
+						</p>
+					</div>
+					<input type="button" value="Show Price" class="btn btn-success" onclick="showPrice()"></input>
+					<div id="show_hide1" class="show_hide">
+						<p>
+							The price of your build is: $xxx
+						</p>
+						<p>
+							<input type="submit" value="Buy" class="btn btn-success"></input>
+						</p>
+					</div>
+					
+				</div>
+			</form>
+
+			<form>
+				<div class="form-group" >
+					Name*<input type="text" class = "form-control" id="name"></input><br />
+					Email*<input type="text" class = "form-control" id="email"></input><br /> 
+					Item Not Listed/Additional Comments*<br /> <textarea class = "form-control" id="message"></textarea><br />
+					<input type="button" value="Submit" class="btn btn-success" onclick="submit_check()"></input>
+				</div>
+				<div id="show_hide" class="show_hide">
+					<p>
+						Message Received.
+					</p>
+				</div>
+			</form>
+		</section>	
+
+		<footer id="footer" class="footer">
+			<div class="container">
+				<p class="text-muted">Rejoice Computer Builders 2016</p>
+			</div>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+	</html>

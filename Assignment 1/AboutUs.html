@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rejoice Custom Computer Builders</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/lightbox.css">
+		<!--
+			Name: Joyce Wing Yan Lau
+			Student Number: 42377029
+			Course: INFS7202
+			Tutorial: P01 Monday 8am
+		-->
+		<!--
+			Change since demo on Monday 18/4
+				- Fixed HTML validation errors
+				- Change the semantic tags 
+			-->        
+		</head>
+		<body>
+			<nav id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header"><a class="navbar-brand" href="#">Rejoice Computers</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-menubuilder">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="index.html">Home</a>
+							</li>
+							<li><a href="Products.html">Products</a>
+							</li>
+							<li><a href="BYO.html">Build Your Own</a>
+							</li>
+							<li class="active"><a href="AboutUs.html">About Us</a>
+							</li>
+							<li><a href="ContactUs.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section id="main">
+				<article class="container">
+					<h2 class="section-headings">Who are we?</h2>
+					<p>We are a small team located in St Lucia, Brisbane. We specialise in building custom and boutique computers. We have been in operation since 2009 and we started as a one-man-band business in a Garage. Now, we are a team of six enthusiast computer builders who are passionate about building the best computers suited to our customers.</p>
+					<h2 class="section-headings">Where are we located?</h2>
+					<p>
+						We are located in St Lucia, Brisbane. <br />
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.9837229385953!2d153.01291065860124!3d-27.4984777626158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc483376ef11fd374!2sThe+University+of+Queensland+-+Advanced+Engineering+Building!5e0!3m2!1sen!2sau!4v1460907813321" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</p>
+
+					<h2 class="section-headings">Shipping</h2>
+					<p>We do ship computer all across Australia. However, shipping costs do apply. The cost of shipping will vary with the system (especially depending on which case is used). </p>
+					<h2 class="section-headings">Looking for an even more customised experience?</h2>
+					<p>
+						Fill in our Contact Us form or the Additional Comments section on <a href="BYO.html">this page</a> with these details: <br /><br />
+
+						If you already know what parts you want in your build. Enter them in the comments section in the contact form in <a href="ContactUs.html">Contact Us</a> or in the Additional Comments section <a href="BYO.html">here</a>. <br /><br />
+
+						If you are unsure and would like some more advice. Please fill in our contact us form in <a href="ContactUs.html">Contact Us</a>. Remember to answer these questions: <br /><br />
+					</p>
+					<ul>
+						<li>
+							What are you using the computer for? (e.g. Gaming/Video Editing/Business)
+						</li>
+						<li>
+							List some of the programs you'll be using on a day to day basis. (e.g. Adobe Premier)
+						</li>
+						<li>
+							What is your budget? (A rough estimate is fine.)
+						</li>
+						<li>
+							On a scale of 1-10 (ten being the most valued), How much do you value the silence of your PC versus the performance of your PC?
+						</li>
+					</ul>
+
+					<h2 class="section-headings">Our History in pictures</h2>
+					<div class="image-row">
+						<div class="image-set">
+							<a href="images/image1med.jpg" data-lightbox="images"><img src="images/image1icon.jpg" alt="History-1"></a>
+							<a href="images/image2med.jpg" data-lightbox="images"><img src="images/image2icon.jpg" alt="History-2"></a>
+							<a href="images/image3med.jpg" data-lightbox="images"><img src="images/image3icon.jpg" alt="History-3"></a>
+						</div>
+					</div>
+					<h2 class="section-headings">Our History on video</h2>
+					<video id="video" src="video/MAH03611.mp4" width="720"></video>
+					<div class="form-group">
+						<button class="btn" onclick="document.getElementById('video').play()">Play</button>
+						<button class="btn"  onclick="document.getElementById('video').pause()">Pause</button>
+						<button class="btn"  onclick="document.getElementById('video').volume+=0.1">Increase Volume</button>
+						<button class="btn"  onclick="document.getElementById('video').volume-=0.1">Decrease Volume</button>
+					</div>
+				</article>
+			</section>
+			<footer id="footer" class="footer">
+				<div class="container">
+					<p class="text-muted">Rejoice Computer Builders 2016</p>
+				</div>
+			</footer>
+
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<script src="js/lightbox.js"></script>
+		</body>
+		</html>

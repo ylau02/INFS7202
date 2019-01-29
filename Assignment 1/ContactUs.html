@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rejoice Custom Computer Builders</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+		<!--
+			Name: Joyce Wing Yan Lau
+			Student Number: 42377029
+			Course: INFS7202
+			Tutorial: P01 Monday 8am
+		-->
+		<!--
+			Change since demo on Monday 18/4
+				- Fixed HTML validation errors
+				- Changed the semantic tags 
+			-->
+
+		</head>
+		<body>
+			<nav id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header"><a class="navbar-brand" href="#">Rejoice Computers</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-menubuilder">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a class="navlink" href="index.html">Home</a>
+							</li>
+							<li><a class="navlink" href="Products.html">Products</a>
+							</li>
+							<li><a href="BYO.html">Build Your Own</a>
+							</li>
+							<li><a class="navlink" href="AboutUs.html">About Us</a>
+							</li>
+							<li class="active"><a class="navlink" href="ContactUs.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section id="main">
+				<article class="container">
+					<h2 class="section-headings">Contact Details</h2>
+					<p>
+						Address: 123 Chancellor's Place, St Lucia, Brisbane <br />
+						Phone: (07) 3333 3333 <br />
+						E-mail: ReJOICEComputers@rc.com.au <br />
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.9837229385953!2d153.01291065860124!3d-27.4984777626158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xc483376ef11fd374!2sThe+University+of+Queensland+-+Advanced+Engineering+Building!5e0!3m2!1sen!2sau!4v1460907813321" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br />
+					</p>
+					<p>Alternatively, fill in the form below. You can use this form to ask us questions relating to pricing or if you are unsure about anything. If you would like a more personalised build but are unsure about the specific hardware selections, please answer the following questions:
+					</p>
+					<ul>
+						<li>
+							What are you using the computer for? (e.g. Gaming/Video Editing/Business)
+						</li>
+						<li>
+							List some of the programs you'll be using on a day to day basis. (e.g. Adobe Premier)
+						</li>
+						<li>
+							What is your budget? (A rough estimate is fine.)
+						</li>
+						<li>
+							On a scale of 1-10 (10 being the most valued), How much do you value the silence of your PC versus the performance of your PC?
+						</li>
+					</ul>
+					<form class="form-group">
+						<h2 class="section-headings">Contact Form</h2>
+						<p id="returnmessage"></p>
+						<label>Name: <span>*</span></label>
+						<input type="text" id="name" class = "form-control" placeholder="Name"/><br />
+						<label>Email: <span>*</span></label>
+						<input type="text" id="email" class = "form-control" placeholder="Email"/><br />
+						<label>Message:</label>
+						<textarea id="message" class = "form-control" placeholder="Message......."></textarea>
+						<br /><input type="button" id="submit" class="btn btn-success" onclick="submit_check()" value="Send Message"/>
+					</form>
+				</article>
+				<div id="show_hide" class="show_hide">
+					<p>
+						Message Received.
+					</p>
+				</div>
+			</section>
+			<footer id="footer" class="footer">
+				<div class="container">
+					<p class="text-muted">Rejoice Computer Builders 2016</p>
+				</div>
+			</footer>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery-ui.min.js"></script>
+			<script src="js/main.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		</body>
+		</html>
